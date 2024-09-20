@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Mainpage from "./components/mainpage"; // Adjust the path as needed
 import Question from "./components/questions"; // Adjust the path as needed
 
