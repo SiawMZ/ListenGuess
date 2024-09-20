@@ -2,12 +2,14 @@
   "name": "listen_guess",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://siawmz.github.io/ListenGuess/",
+  "homepage": "https://SiawMZ.github.io/ListenGuess/",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "main -d dist",
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
