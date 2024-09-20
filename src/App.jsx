@@ -8,7 +8,7 @@ import AnswerList from "./components/question_data/answerList";
 
 function App() {
   return (
-    <BrowserRouter basename="/ListenGuess/">
+    <BrowserRouter basename="/ListenGuess">
       <Routes>
         <Route path="/question" element={<Question />} />
         <Route path="/answer" element={<Answer />} />
