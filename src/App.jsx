@@ -9,7 +9,7 @@ import AnswerList from "./components/question_data/answerList";
 
 function App() {
   return (
-    <Router basename="/ListenGuess/">
+    <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/question" element={<Question />} />
         <Route path="/answer" element={<Answer />} />
@@ -18,10 +18,10 @@ function App() {
           path="/set1"
           element={
             <Set_1
-              object="你很帅eh！/你很美eh"
+              object="你很帅eh!/你很美eh"
               object2="谢谢，我也这样觉得"
               object3="等下要去吃mamak吗"
-              object4="okay啊！我很饿哦！"
+              object4="okay啊!我很饿哦!"
               object5="等下要吃什么？"
               object6="随便啦"
               object7="你觉得那一件衣服好看"
@@ -37,7 +37,7 @@ function App() {
           element={
             <AnswerList
               object2="谢谢，我也这样觉得"
-              object4="okay啊！我很饿哦！"
+              object4="okay啊! 我很饿哦!"
               object6="随便啦"
               object8="我觉得你穿的都好看"
               object10="多少个人"
@@ -143,7 +143,7 @@ function App() {
           element={
             <Set_1
               object="你很生气的时候你会讲什么"
-              object2="老虎不发威，你当我hello kitty?"
+              object2="老虎不发威, 你当我hello kitty?"
               object3="你回到家，第一句是什么？"
               object4="妈我很饿"
               object5="喝醉的人通常说什么"
@@ -160,7 +160,7 @@ function App() {
           path="/set5a"
           element={
             <AnswerList
-              object2="老虎不发威，你当我hello kitty?"
+              object2="老虎不发威, 你当我hello kitty?"
               object4="妈我很饿"
               object6="我没醉"
               object8="我读书少，你不要骗我"
