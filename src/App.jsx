@@ -9,7 +9,7 @@ import AnswerList from "./components/question_data/answerList";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ListenGuess/">
       <Routes>
         <Route path="/question" element={<Question />} />
         <Route path="/answer" element={<Answer />} />
