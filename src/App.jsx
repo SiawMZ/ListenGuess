@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Mainpage from "./components/mainpage"; // Adjust the path as needed
 import Question from "./components/questions"; // Adjust the path as needed
 
@@ -8,7 +8,7 @@ import AnswerList from "./components/question_data/answerList";
 
 function App() {
   return (
-    <BrowserRouter basename="/ListenGuess">
+    <HashRouter>
       <Routes>
         <Route path="/question" element={<Question />} />
         <Route path="/answer" element={<Answer />} />
@@ -261,7 +261,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
